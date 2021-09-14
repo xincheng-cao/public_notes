@@ -16,7 +16,9 @@ Bayes Theorem:
 - presence of one particular feature not affectin the other
 
 example
+
 ![pic](example.png)
+
 - assumption1 these predictors are independent
 - assumption2 all the predictors have an equal effect on the outcome
 
@@ -66,4 +68,6 @@ Types of Naive Bayes Classifier:
 
 conclusion
 
-    Naive Bayes algorithms are mostly used in sentiment analysis, spam filtering, recommendation systems etc. They are fast and easy to implement but their biggest disadvantage is that the requirement of predictors to be independent. In most of the real life cases, the predictors are dependent, this hinders the performance of the classifier.
+    Naive Bayes algorithms are mostly used in sentiment analysis, spam filtering, recommendation systems etc. 
+    They are fast and easy to implement but their biggest disadvantage is that the requirement of predictors to be independent. 
+    In most of the real life cases, the predictors are dependent, this hinders the performance of the classifier.
