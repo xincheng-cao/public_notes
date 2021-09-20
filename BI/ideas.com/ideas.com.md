@@ -1,5 +1,5 @@
 # IDEAS
-
+https://www.youtube.com/watch?v=bRXGDhUAbII
 ## Markets
 ### hotels
 ![pic](IDeaS-G3-RMS-Revenue-Management-Strategies-Software-Solutions.png)
