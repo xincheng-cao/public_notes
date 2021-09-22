@@ -22,3 +22,7 @@ https://www.youtube.com/watch?v=Sn-ydQHDfa0
 ![pic](reviews1.png)
 9. task
 ![pic](tasks1.png)
+10. upgrade
+![pic](upgrade1.png)
+![pic](upgrade2.png)
+![pic](upgrade3.png)
