@@ -1,6 +1,7 @@
 # Opentext
 
 ## 1 Product logics
+![pic](customers.png)
 ![pic](product_logics.png)
 - explanations:
     - syndication: leasing the right to broadcasting on different channel
@@ -81,4 +82,61 @@
     - ![pic](multiple_formats.png)
 
 - adaptive media delivery
-    - publishing 
+    - publishing to CDNs
+    - seamless integration to editors
+    - track delivery of media across all channels and devices
+- schedule and automate media distribution
+    - schedule delivery
+        - ![pic](schedule.png)
+    - based on folder/metadata
+    - replicate folder hierarchies
+    - framework for custome delivery
+        - intuitive HTML based designer
+        - customize activities 
+        - ![pic](customize.png)
+    - design your brand experience(similiar to yangcui's wechat ads brand pics)
+        - ![pic](page.png)
+
+### 2.9 digital assets secure risk-managed use
+- expire
+    - expire AMD managed reditions
+    - expire CDN managed renditions
+    - ![pic](expire.png)
+- digital rights (FADEL rights cloud)
+    - for corps needs content governance and compliance 
+    - when, where and how any content can be used
+    - track online usages, assest expirations and violations
+
+### 2.10 AI
+- just automation
+    - ![pic](automate.png)
+    - all the actions integrated in the system
+- Img
+    - Optical character recognition
+        - text 
+        - language 
+        - ![pic](OCR.png)
+        - ![pic](OCR2.png)
+    - Face detection and data visualized
+        - ![pic](face.png)
+- Vid
+    - video insights
+    - ![pic](insights.png)
+        - speech to text
+            - ![pic](speeches.png)
+        - people recognition
+            - ![pic](face2.png)
+        - keywords extration
+            - from speech and visual text (OCR)
+            - ![pic](white.png)
+    - Analysis
+        - keyword searching using faces, ages, genders, color, descriptions, and captions
+        - ![pic](search.png)
+
+### 2.11 Analytics
+- asset usage
+    - ![pic](usage.png)
+- system 
+    - ![pic](system.png)
+- usage
+    - ![pic](usage2.png)
