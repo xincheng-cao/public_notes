@@ -82,9 +82,91 @@
 
 ## 4 hootsuite
 [site](https://www.hootsuite.com/)
-![pic](hootsuiteplatforms.png)
+### intro
+- ![pic](hootsuiteplatforms.png)
+- ![pic](hootsuitecustomers.png)
+
+|feature|intro|
+|:-|-:|
+|publish| share and schedule engaging content to your profiles|
+|engage| Monitor and manage incoming messages across your social networks quickly and easily, and always get the right team member to respond.|
+|monitor |Stay on top of conversations on key topics, track the performance of your posts and brand mentions, and monitor competitor activities. All from one dashboard.|
+|advertise|Promote your organic content and manage your paid social campaigns in one convenient place.|
+|analyze|Analyze your performance across all your social networks and create custom reports to show the impact on your brand and bottom line.|
+
+
+### pubish
 - plan ur posts
     ![pic](hootsuiteplanpost.png)
 - create contents 
-    ![pic](hootsuitecreate.png)
-    ![pic](hootsuiteschedule.png)
+    - ![pic](hootsuitecreate.png)
+    - ![pic](hootsuiteschedule.png)
+
+## 5 sproutsocial
+[site](https://sproutsocial.com/)
+### intro
+- ![pic](sproutsocialplatforms.png)
+- ![pic](sproutsocialcustomers.png)
+
+|product|intro|
+|:-|-:|
+|engagement| Sprout’s engagement tools help you connect with customers quickly and efficiently, so you can better address their needs and build greater brand loyalty.|
+|publishing and scheduling| effortlessly plan, create, manage and deliver social content and campaigns as a team.|
+|analytics|Maintain complete oversight of all connected social profiles from one location.  Compare your performance on social to your competitors’ to find new opportunities.|
+|listening| Track and analyze conversations around relevant topics to understand consumer sentiment and brand health.|
+
+### publishing and scheduling
+- Integrate
+    - ![pic](sproutintegrate.jpeg)
+- schedule
+    - ![pic](sproutschedule.png)
+- library
+    - ![pic](sproutlibrary.png)
+- optimal
+    - ![pic](sproutoptimal.jpeg)
+    -  Automatically publish content at the times most likely to reach audiences and receive real-time engagement updates.
+    - *really focus on engagement*
+- mobile 
+    - ![pic](sproutmobile.jpeg)
+
+
+## emplifi & socialbakers
+### emplifi
+[site](https://emplifi.io/)
+
+- ![pic](emplificustomers.png)
+
+|products|intro|
+|:-|-:|
+|social market cloud|..., scheduling and pubishing, ...|
+|social commerce cloud||
+|service cloud|...|
+
+- Multi-channel by design
+    - Align your brand voice across Facebook, Instagram, Twitter, Pinterest, and LinkedIn by scheduling all your posts and campaigns through one interface.
+- A holistic calendar for convenient scheduling
+    - Emplifi’s drag-and-drop and mobile-friendly calendar provides an intuitive way to get complete oversight of your workflows and avoid campaign mistakes.
+- Always make the right decisions with AI
+    - Perfect timing (Maximize your reach and impressions with AI-driven recommendations for the best times to publish. Watch your engagement metrics rise as your content connects with a wider audience.)
+    - Optimized campaign effectiveness (Reduce your marketing costs by seeing which posts make the most sense to promote. Use Emplifi’s reporting to audit your current campaigns and elevate your promotion strategies)
+
+### socialbakers
+[site](https://www.socialbakers.com/)
+
+- ![pic](socialbakerscustomers1.png)
+
+- ![pic](socialbakerscustomers2.png)
+
+|solutions|intro|
+|:-|-:|
+|social listening *new*|Get the instantly actionable insights you need to create the best digital experiences for your audience|
+|audience analysis|Uncover who your audiences really are with instant AI-powered persona mapping|
+|influencers| From discovering the right influencers for your business to validating their quality to analyzing their results. |
+|content|content hub|
+|publishing and scheduling|Easily schedule and publish posts to multiple accounts from one collaborative calendar|
+|analytics and benchmarks|...|
+|workflow management|...|
+
+- ![pic](socialbakerspublish.webp)
+
+- ![pic](socialbakersAI.png)
