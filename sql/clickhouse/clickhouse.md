@@ -52,3 +52,13 @@ With sharding data is divided into parts (shards) according to some sharding key
 In ClickHouse each shard work independently and process its' part of data, inside each shard replication can work. And later to query all the shards at the same time and combine the final result - Distributed engine is used. So Distributed work as loadbalancer inside each shard, and can combine the data coming from different shards together to make the 'common' result.
 
 You can use Distribured table for inserts, it that case it will pass the data to one of the shards according to sharding key. Or you can insert to underlying table on one of the shards bypassing the Distributed table.
+
+## dont use redshift as an OLTP database
+
+It is common to connect an application framework like Django to Amazon Redshift. This is useful when using Redshift data in your application, i.e. in an OLTP scenario. Since Amazon Redshift is an OLAP database, it may not handle these queries well.  
+
+The challenge of using Redshift as an OLTP database is that queries can <mark>lack the low-latency that would exist on a traditional RDBMS and transactional queries. Unlike OLTP databases, OLAP databases do not use an index. This is a result of the column-oriented data storage design of Amazon Redshift which makes the trade-off to perform better for big data analytical workloads</mark>.
+
+[site](https://www.intermix.io/blog/dont-use-redshift-as-an-oltp-database/)
+
+
