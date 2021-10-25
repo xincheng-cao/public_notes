@@ -62,3 +62,15 @@ The challenge of using Redshift as an OLTP database is that queries can <mark>la
 [site](https://www.intermix.io/blog/dont-use-redshift-as-an-oltp-database/)
 
 
+## monitor clickhouse log
+sudo tail -f /var/log/clickhouse-server/clickhouse-server.log | grep executeQuery
+
+## configuration 
+`sudo ls  /etc/clickhouse-server -a`
+
+.  ..  config.d  config.xml  users.d  users.xml
+
+sudo nano users.xml
+
+`<!-- User can create other users and grant rights to them. -->
+<access_management>1</access_management>`
