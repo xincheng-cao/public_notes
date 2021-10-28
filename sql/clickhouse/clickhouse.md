@@ -74,3 +74,45 @@ sudo nano users.xml
 
 `<!-- User can create other users and grant rights to them. -->
 <access_management>1</access_management>`
+
+## lowCardinality Data Type
+
+data_type — String, FixedString, Date, DateTime, and numbers excepting Decimal. LowCardinality is not efficient for some data types, see the allow_suspicious_low_cardinality_types setting description.
+
+LowCardinality is a superstructure that changes a data storage method and rules of data processing. ClickHouse applies dictionary coding to LowCardinality-columns. Operating with dictionary encoded data significantly increases performance of SELECT queries for many applications.
+
+The efficiency of using LowCardinality data type depends on data diversity. If a dictionary contains less than 10,000 distinct values, then ClickHouse mostly shows higher efficiency of data reading and storing. If a dictionary contains more than 100,000 distinct values, then ClickHouse can perform worse in comparison with using ordinary data types.
+
+Consider using LowCardinality instead of Enum when working with strings. LowCardinality provides more flexibility in use and often reveals the same or higher efficiency.
+
+`CREATE TABLE lc_t
+(
+    id UInt16,
+    strings LowCardinality(String)
+)
+ENGINE = MergeTree()
+ORDER BY id`
+
+## tuple
+A tuple of elements, each having an individual type.
+
+Tuples are used for temporary column grouping. Columns can be grouped when an IN expression is used in a query, and for specifying certain formal parameters of lambda functions. For more information, see the sections IN operators and Higher order functions.
+
+Tuples can be the result of a query. In this case, for text formats other than JSON, values are comma-separated in brackets. In JSON formats, tuples are output as arrays (in square brackets).
+
+Working with Data Types 
+
+When creating a tuple on the fly, ClickHouse automatically detects the type of each argument as the minimum of the types which can store the argument value. If the argument is NULL, the type of the tuple element is Nullable.
+
+Example of automatic data type detection:
+
+`SELECT tuple(1, NULL) AS x, toTypeName(x)`
+
+ORDER BY — The sorting key.
+
+A tuple of column names or arbitrary expressions. Example: ORDER BY (CounterID, EventDate).
+
+ClickHouse uses the sorting key as a primary key if the primary key is not defined obviously by the PRIMARY KEY clause.
+
+<mark>Use the ORDER BY tuple() syntax, if you do not need sorting. See Selecting the Primary Key.</mark>
+
