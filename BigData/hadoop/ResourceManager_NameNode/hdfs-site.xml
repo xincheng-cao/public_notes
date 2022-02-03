@@ -17,4 +17,23 @@
 <!-- Put site-specific property overrides in this file. -->
 
 <configuration>
+    <property>
+        <name></name>
+        <value></value>
+    </property>
+
+    <property>
+        <name></name>
+        <value></value>
+    </property>
+
+    <property>
+        <name></name>
+        <value></value>
+    </property>
+
+    <property>
+        <name></name>
+        <value></value>
+    </property>
 </configuration>
