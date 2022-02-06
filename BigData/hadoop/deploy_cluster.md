@@ -1,3 +1,4 @@
+*[page source](https://medium.com/@jootorres_11979/how-to-set-up-a-hadoop-3-2-1-multi-node-cluster-on-ubuntu-18-04-2-nodes-567ca44a3b12)
 # master/slave1/slave2
 
 ## java
@@ -91,3 +92,83 @@ ssh-keygen -t rsa
 ssh-copy-id hadoopuser@hadoop-master
 ssh-copy-id hadoopuser@hadoop-slave1
 ssh-copy-id hadoopuser@hadoop-slave2
+
+## core-site.xml
+vim /usr/local/hadoop/etc/hadoop/core-site.xml
+
+[example file](./master/core-site.xml)
+
+## hdfs-site.xml
+vim /usr/local/hadoop/etc/hadoop/hdfs-site.xml
+
+[example file](./master/hdfs-site.xml)
+
+## workers file
+vim /usr/local/hadoop/etc/hadoop/workers
+
+[example file](./master/workers)
+
+## cp to slaves
+
+scp /usr/local/hadoop/etc/hadoop/* hadoop-slave1:/usr/local/hadoop/etc/hadoop/
+
+scp /usr/local/hadoop/etc/hadoop/* hadoop-slave2:/usr/local/hadoop/etc/hadoop/
+
+## format HDFS
+
+source /etc/environment
+
+hdfs namenode -format
+
+## pdsh default rcmd to ssh
+
+vim .bashrc
+
+export PDSH_RCMD_TYPE=ssh
+
+source .bashrc
+
+## start HDFS
+
+start-dfs.sh (login as hadoopuser)
+
+jps (on master and slaves with hadoopuser logged in)
+
+## browser check health
+
+<public_ip>:9870
+
+## configure yarn
+
+vim .bashrc
+
+export HADOOP_HOME="/usr/local/hadoop"
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_YARN_HOME=$HADOOP_HOME
+
+source .bashrc
+
+# Slaves
+
+su - hadoopuser
+
+## yarn-site.xml
+vim /usr/local/hadoop/etc/hadoop/yarn-site.xml
+
+[example file](./slaves/yarn-site.xml)
+
+# Master
+
+su - hadoopuser
+
+## start yarn
+
+start-yarn.sh
+
+## check yarn health
+
+<public_ip>:8088/cluster
+
