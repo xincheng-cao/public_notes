@@ -35,3 +35,18 @@ vim spark-defaults.conf
 
 spark.master    yarn
 spark.driver.memory    7g
+spark.executor.memory     7g
+
+spark.eventLog.enabled  true
+spark.eventLog.dir hdfs://hadoop-master:9000/spark-logs
+
+spark.history.provider            org.apache.spark.deploy.history.FsHistoryProvider
+spark.history.fs.logDirectory     hdfs://hadoop-master:9000/spark-logs
+spark.history.fs.update.interval  10s
+spark.history.ui.port             18080
+
+### start spark history_server
+
+hdfs dfs -mkdir /spark-logs
+
+$SPARK_HOME/sbin/start-history-server.sh
