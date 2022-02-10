@@ -36,7 +36,7 @@ sudo vim /etc/environment
 
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/local/hadoop/bin:/usr/local/hadoop/sbin"
 
-JAVA_HOME="/home/ubuntu/jdk-11.0.2/jre"
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
 
 ## add user
 sudo adduser hadoopuser
