@@ -160,6 +160,8 @@ vim /usr/local/hadoop/etc/hadoop/yarn-site.xml
 
 [example file](./slaves/yarn-site.xml)
 
+(master node also need to set yarn-site.xml like this)
+
 # Master
 
 su - hadoopuser
