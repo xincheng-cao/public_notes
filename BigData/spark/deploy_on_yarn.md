@@ -1,3 +1,4 @@
+[*page source](https://www.linode.com/docs/guides/install-configure-run-spark-on-top-of-hadoop-yarn-cluster/)
 # deploy spark on yarn cluster
 
 ## master
@@ -36,8 +37,9 @@ mv $SPARK_HOME/conf/spark-defaults.conf.template $SPARK_HOME/conf/spark-defaults
 vim spark-defaults.conf
 
 spark.master    yarn
-spark.driver.memory    7g
-spark.executor.memory     7g
+spark.driver.memory    4g
+spark.yarn.am.memory    4g
+spark.executor.memory     4g
 
 spark.eventLog.enabled  true
 spark.eventLog.dir hdfs://hadoop-master:9000/spark-logs
@@ -53,6 +55,7 @@ hdfs dfs -mkdir /spark-logs
 
 $SPARK_HOME/sbin/start-history-server.sh
 
+http://node-master:18080
 
 ### spark.yarn.archive
 
