@@ -174,3 +174,12 @@ start-yarn.sh
 
 <public_ip>:8088/cluster
 
+
+# Master and slaves
+
+## update yarn-site.xml on the whole cluster
+vim /usr/local/hadoop/etc/hadoop/yarn-site.xml
+
+[master](./master/yarn-site.xml)
+
+[slaves](./slaves/yarn-site.xml)
