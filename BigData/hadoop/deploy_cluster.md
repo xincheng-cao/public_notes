@@ -183,3 +183,17 @@ vim /usr/local/hadoop/etc/hadoop/yarn-site.xml
 [master](./master/yarn-site.xml)
 
 [slaves](./slaves/yarn-site.xml)
+
+
+# master
+## pipenv
+sudo su - hadoopuser
+
+? need install pip
+sudo apt-get update
+sudo apt install python3-pip
+
+pip install --user pipenv 
+(which pipenv: /home/hadoopuser/.local/bin/pipenv, /home/ubuntu/.local/bin/pipenv)
+
+re-login
