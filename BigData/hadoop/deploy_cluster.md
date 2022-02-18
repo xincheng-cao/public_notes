@@ -226,3 +226,19 @@ ctrl+c
 local mac:
 htop filter ssh
 kill xxxxx
+
+### pycharm
+
+create a .ipynb file on local mac
+
+![pic](./pycharm_remote_jupyter.png)
+
+(this is funny bc you create a .ipynb on local mac if you open notebook in browser
+it will create a notebook on remote master server)
+
+(pro: use intelligent promotion feature on local mac pycharm only when you install the package
+on your local mac.
+
+if you didnt install pyspark on local mac, you can still import bc the runtime is on remote master,
+but no intelligent promotion is presented.
+)
