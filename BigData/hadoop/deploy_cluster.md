@@ -197,3 +197,32 @@ pip install --user pipenv
 (which pipenv: /home/hadoopuser/.local/bin/pipenv, /home/ubuntu/.local/bin/pipenv)
 
 re-login
+
+## jupyter notebook
+### Running a Jupyter notebook from a remote server
+[link](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/)
+
+master:
+
+sudo su - hadoopuser
+
+pip install notebook
+
+jupyter notebook --no-browser --port=8888
+
+jupyter notebook list (get the token!)
+
+local mac:
+
+ssh -i "xcatbps_key.pem" -N -f -L localhost:8889:localhost:8888  hadoopuser@ec2-54-226-170-55.compute-1.amazonaws.com
+
+browser: localhost:8889 (enter the token)
+
+### close
+
+master:
+ctrl+c
+
+local mac:
+htop filter ssh
+kill xxxxx
